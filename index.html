@@ -4,10 +4,7 @@
   <meta charset="UTF-8" />
   <title>My Flipbook</title>
 
-  <!-- Load jQuery first -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
-  <!-- Load local Turn.js -->
   <script src="js/turn.min.js"></script>
 
   <style>
@@ -23,11 +20,15 @@
       width: 800px;
       height: 500px;
       margin-top: 50px;
+      overflow: hidden;
     }
 
     .page {
       width: 400px;
       height: 500px;
+      display: block;
+      background: white;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
 
     .page img {
@@ -53,11 +54,11 @@
   </div>
 
   <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
       $('#flipbook').turn({
         width: 800,
         height: 500,
-        autoCenter: true,
+        autoCenter: true
       });
     });
   </script>
