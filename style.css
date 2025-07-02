@@ -15,11 +15,17 @@ h1{
 	text-align: center;
 }
 section{
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	background-position: center top;
-	width: 100%;
-	height: 100vh;
+	section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100vh; /* Full screen */
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
 }
 /*--Insert your own background image below---*/
 .I{
